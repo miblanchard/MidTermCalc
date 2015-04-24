@@ -12,22 +12,31 @@ class CalculatorViewController : UIViewController {
 
     @IBOutlet weak var display: UILabel!
 
-    var firstNumber = Float()
-    var secondNumber = Float()
-    var result = Float()
-    var operation = ""
+    var firstNumber = Double()
+    var currentNumber = Double()
+    var result = Double()
+    var operation = String()
     var decimalWasAdded = false
     var userIsInTheMiddleOfTypingANumber = false
+    var negativeButtonHasBeenPressed = false
 
-    @IBAction func appendDigit(sender: UIButton) {
+    @IBAction func typeNumber(sender: UIButton) {
         var number = sender.currentTitle
 
         if number == "." && decimalWasAdded == true {
             return
         } else if number == "rand" {
             display.text = "\(rand())"
+//        } else if number == "+/-" {
+//            if negativeButtonHasBeenPressed == false {
+//                display.text = "-\(display.text!)"
+//                negativeButtonHasBeenPressed = true
+//            } else if negativeButtonHasBeenPressed == true {
+//                display.text = dropFirst(display.text!)
+//                negativeButtonHasBeenPressed = false
+//                return
         } else {
-            if userIsInTheMiddleOfTypingANumber == false {
+            if userIsInTheMiddleOfTypingANumber == true {
                 display.text = display.text! + number!
             } else {
                 display.text = number
@@ -37,63 +46,74 @@ class CalculatorViewController : UIViewController {
             if number == "." {
                 decimalWasAdded = true
             }
-
+            }
         }
-    }
 
 
     @IBAction func operate(sender: UIButton) {
-        let operation = sender.currentTitle!
-        if userIsInTheMiddleOfTypingANumber == false {
-            equal()
-        }
+        firstNumber = parseANumberFromScreen()
+        operation = sender.currentTitle!
         switch operation {
-        case "×": performOperation { $0 * $1 }
-        case "÷": performOperation { $1 / $0 }
-        case "+": performOperation { $0 + $1 }
-        case "−": performOperation { $1 - $0 }
-        case "%": performOperationSingle { $0 / Float(100) }
-        case "√": performOperationSingle { sqrt($0) }
-        case "fib": fibonaci()
-//        case "x²":
-//        case "x³":
+        case "×": result = firstNumber
+        case "÷": result = firstNumber
+        case "+": result = firstNumber
+        case "−": result = firstNumber
+        case "%": result = firstNumber / Double(100)
+        case "√": result = sqrt(firstNumber)
+        case "fib": result = fibonaci()
+        case "x²": result = (firstNumber * firstNumber)
+        case "x³": result = (firstNumber * firstNumber * firstNumber)
         default: break
         }
-    }
-    func performOperation(operation: (Double,Double) -> Double) {
-        if operandStack.count >= 2 {
-            displayValue = operation(operandStack.removeLast(), operandStack.removeLast())
-            equal()
-        }
-    }
-
-    @IBAction func clear() {
-        display.text! = "0"
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
+        display.text = "\(result)"
+    }
 
+    @IBAction func equals(sender: UIButton) {
+        currentNumber = parseANumberFromScreen()
+        if sender.currentTitle! == "="{
+            result = currentNumber
+        } 
+
+        switch operation {
+        case "×": result = firstNumber * currentNumber
+        case "÷": result = firstNumber / currentNumber
+        case "+": result = firstNumber + currentNumber
+        case "−": result = firstNumber - currentNumber
+        default: break
+        }
+        display.text = "\(result)"
+    }
+
+
+    @IBAction func clear() {
+        userIsInTheMiddleOfTypingANumber = false
+        decimalWasAdded = false
+        result = 0
+        display.text! = ""
     }
 
     @IBAction func clearAll() {
         firstNumber = 0
-        secondNumber = 0
+        currentNumber = 0
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
         result = 0
-        display.text! = "\(result)"
+        display.text! = ""
     }
 
-    @IBAction func equal() {
-        userIsInTheMiddleOfTypingANumber = false
-        decimalWasAdded = false
+    func parseANumberFromScreen() -> Double {
+        return NSString(string: display.text!).doubleValue
     }
 
-    func fibonaci() {
+    func fibonaci() -> Double {
         let fibonacciAdder = FibonacciAdder()
         var newFib:Int? = display.text!.toInt() ?? 0
-        var myResult = fibonacciAdder.fibonacciNumberAtIndex(newFib!)
+        var fibResult = fibonacciAdder.fibonacciNumberAtIndex(newFib!)
 
-        display.text = toString(myResult)
+//        display.text! = "\(fibResult)"
+        return Double(fibResult)
     }
 
 }
@@ -106,7 +126,7 @@ class FibonacciAdder {
         var secondNumber = 1
         var sum = secondNumber
 
-        for var i=1; i<=indexOfFibonacciNumber; i++ {
+        for var i=1; i<=(indexOfFibonacciNumber - 1); i++ {
 
             sum = firstNumber + secondNumber
             firstNumber = secondNumber
@@ -115,4 +135,3 @@ class FibonacciAdder {
         return sum
     }
 }
-

@@ -9,6 +9,7 @@
         <!--Calculator View Controller-->
         <scene sceneID="hkH-mc-toz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ny-LV-5nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ymb-Wq-OlL" customClass="CalculatorViewController" customModule="MidTermCalcMB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F9e-7v-Pbv"/>
@@ -27,7 +28,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="Zrq-ka-p4U"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="etw-5r-fek"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tr2-td-ZZX">
@@ -39,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="NWk-9D-e0x"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="ild-9Q-dhS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cj-1F-lcZ">
@@ -51,7 +52,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="skE-Hi-Gz1"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="6pI-3L-2ug"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgn-ug-koI">
@@ -63,7 +64,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="wed-M7-gmU"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="iS9-eL-qlj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ3-wk-aQ4">
@@ -75,7 +76,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="2xA-t8-rjS"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="dln-Ts-zzI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-5T-7Fe">
@@ -87,7 +88,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="TEc-KI-NOK"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="M6T-Yy-pQk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyV-ZS-Jag">
@@ -99,7 +100,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="g5A-f0-WSJ"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="BDL-kf-v18"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPq-X1-LnS">
@@ -111,7 +112,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="KCn-Ew-R5s"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="dfV-pN-HQI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tp-mV-sDz">
@@ -123,7 +124,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="g6C-UB-dUE"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="MPF-3b-H29"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKO-yd-KaF">
@@ -135,7 +136,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="06v-ja-jh8"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="t2I-FH-nJI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIL-qE-wMg">
@@ -147,7 +148,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="enter" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="gTu-sN-lbW"/>
+                                    <action selector="equals:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="T9D-uv-58G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgQ-XO-782">
@@ -159,7 +160,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="s6g-pN-b7g"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="Z5C-s5-RIg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOt-u7-pVG">
@@ -243,7 +244,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="7WC-Yf-ozi"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="HVN-aO-rEh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgt-es-3UQ">
@@ -255,8 +256,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="appendDigit:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="Ae2-C6-EwZ"/>
-                                    <action selector="enter" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="9rQ-J6-sWw"/>
+                                    <action selector="typeNumber:" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="LRo-Tk-5EA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyV-Xl-dlL">
@@ -269,7 +269,6 @@
                                 </state>
                                 <connections>
                                     <action selector="clear" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="HSg-fG-kmJ"/>
-                                    <action selector="enter" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="pU9-ME-c43"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7B-rY-DdY">
@@ -282,7 +281,6 @@
                                 </state>
                                 <connections>
                                     <action selector="clearAll" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="wyw-V0-gxd"/>
-                                    <action selector="enter" destination="Ymb-Wq-OlL" eventType="touchUpInside" id="YJg-Ls-rsS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDq-Em-kf8">
@@ -449,7 +447,6 @@
                         <outlet property="display" destination="yfB-B2-0dn" id="gOZ-2K-yCA"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ny-LV-5nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="591" y="379"/>
         </scene>
