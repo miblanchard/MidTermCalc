@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		003CC9371AE710A2001503F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CC9361AE710A2001503F1 /* AppDelegate.swift */; };
-		003CC9391AE710A2001503F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CC9381AE710A2001503F1 /* ViewController.swift */; };
 		003CC93C1AE710A2001503F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003CC93A1AE710A2001503F1 /* Main.storyboard */; };
 		003CC93E1AE710A2001503F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003CC93D1AE710A2001503F1 /* Images.xcassets */; };
 		003CC9411AE710A2001503F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003CC93F1AE710A2001503F1 /* LaunchScreen.xib */; };
 		003CC94D1AE710A2001503F1 /* MidTermCalcMBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CC94C1AE710A2001503F1 /* MidTermCalcMBTests.swift */; };
+		003CC9571AE71462001503F1 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CC9561AE71462001503F1 /* CalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		003CC9311AE710A2001503F1 /* MidTermCalcMB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidTermCalcMB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003CC9351AE710A2001503F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003CC9361AE710A2001503F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		003CC9381AE710A2001503F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		003CC93B1AE710A2001503F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		003CC93D1AE710A2001503F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		003CC9401AE710A2001503F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		003CC9461AE710A2001503F1 /* MidTermCalcMBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidTermCalcMBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		003CC94B1AE710A2001503F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003CC94C1AE710A2001503F1 /* MidTermCalcMBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidTermCalcMBTests.swift; sourceTree = "<group>"; };
+		003CC9561AE71462001503F1 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				003CC9361AE710A2001503F1 /* AppDelegate.swift */,
-				003CC9381AE710A2001503F1 /* ViewController.swift */,
+				003CC9561AE71462001503F1 /* CalculatorViewController.swift */,
 				003CC93A1AE710A2001503F1 /* Main.storyboard */,
 				003CC93D1AE710A2001503F1 /* Images.xcassets */,
 				003CC93F1AE710A2001503F1 /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003CC9391AE710A2001503F1 /* ViewController.swift in Sources */,
+				003CC9571AE71462001503F1 /* CalculatorViewController.swift in Sources */,
 				003CC9371AE710A2001503F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
