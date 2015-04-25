@@ -24,14 +24,24 @@ class CalculatorViewController : UIViewController {
     @IBAction func typeNumber(sender: UIButton) {
         var number = sender.currentTitle
 
-        if number == "." && decimalWasAdded == true {
+        if equalsButtonWasPressed == true {
+            display.text = ""
+            display.text = display.text! + number!
+            equalsButtonWasPressed = false
+        } else if  number == "." && decimalWasAdded == true {
             return
         } else if number == "rand" {
             display.text = "\(rand())"
+        } else if number == "+/-" && negativeButtonHasBeenPressed == false {
+            display.text = "-\(display.text!)"
+            negativeButtonHasBeenPressed = true
+        } else if number == "+/-" && negativeButtonHasBeenPressed == true {
+            display.text = dropFirst(display.text!)
+            negativeButtonHasBeenPressed = false
         } else {
             if userIsInTheMiddleOfTypingANumber == true {
                 display.text = display.text! + number!
-            } else if equalsButtonWasPressed == true {
+            } else {
                 display.text = number
             }
             userIsInTheMiddleOfTypingANumber = true
@@ -41,15 +51,6 @@ class CalculatorViewController : UIViewController {
             }
             }
     }
-
-            //        } else if number == "+/-" {
-            //            if negativeButtonHasBeenPressed == false {
-            //                display.text = "-\(display.text!)"
-            //                negativeButtonHasBeenPressed = true
-            //            } else if negativeButtonHasBeenPressed == true {
-            //                display.text = dropFirst(display.text!)
-            //                negativeButtonHasBeenPressed = false
-            //                return
 
     @IBAction func operate(sender: UIButton) {
         firstNumber = parseANumberFromScreen()
@@ -95,7 +96,7 @@ class CalculatorViewController : UIViewController {
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
         result = 0
-        display.text! = ""
+        display.text! = "\(result)"
     }
 
     @IBAction func clearAll() {
@@ -105,7 +106,7 @@ class CalculatorViewController : UIViewController {
         decimalWasAdded = false
         equalsButtonWasPressed = false
         result = 0
-        display.text! = ""
+        display.text! = "\(result)"
     }
 
     func parseANumberFromScreen() -> Double {
@@ -117,7 +118,6 @@ class CalculatorViewController : UIViewController {
         var newFib:Int? = display.text!.toInt() ?? 0
         var fibResult = fibonacciAdder.fibonacciNumberAtIndex(newFib!)
 
-//        display.text! = "\(fibResult)"
         return Double(fibResult)
     }
 
@@ -140,31 +140,3 @@ class FibonacciAdder {
         return sum
     }
 }
-//switch number {
-//case "1":
-//case "2":
-//case "3":
-//case "4":
-//case "5":
-//case "6":
-//case "7":
-//case "8":
-//case "9":
-//case "rand":
-//    display.text = "\(rand())"
-//case ".":
-//    if decimalWasAdded == true {
-//        return
-//    } else {
-//
-//    }
-//case "+/-":
-//    if negativeButtonHasBeenPressed == false {
-//        display.text = "-\(display.text!)"
-//        negativeButtonHasBeenPressed = true
-//    } else if negativeButtonHasBeenPressed == true {
-//        display.text = dropFirst(display.text!)
-//        negativeButtonHasBeenPressed = false
-//    }
-//default: break
-//}
