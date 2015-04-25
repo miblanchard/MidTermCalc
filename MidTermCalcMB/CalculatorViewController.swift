@@ -23,33 +23,31 @@ class CalculatorViewController : UIViewController {
 
     @IBAction func typeNumber(sender: UIButton) {
         var number = sender.currentTitle
-
         if equalsButtonWasPressed == true {
-            display.text = ""
-            display.text = display.text! + number!
+            clearAll()
             equalsButtonWasPressed = false
-        } else {
-            if  number == "." && decimalWasAdded == true {
+        }
+
+        if  number == "." && decimalWasAdded == true {
             return
-            } else if number == "rand" {
+        } else if number == "rand" {
             display.text = "\(rand())"
-            } else if number == "+/-" && negativeButtonHasBeenPressed == false {
+        } else if number == "+/-" && negativeButtonHasBeenPressed == false {
             display.text = "-\(display.text!)"
             negativeButtonHasBeenPressed = true
-            } else if number == "+/-" && negativeButtonHasBeenPressed == true {
+        } else if number == "+/-" && negativeButtonHasBeenPressed == true {
             display.text = dropFirst(display.text!)
             negativeButtonHasBeenPressed = false
-            } else {
-                if userIsInTheMiddleOfTypingANumber == true {
+        } else {
+            if userIsInTheMiddleOfTypingANumber == true {
                 display.text = display.text! + number!
             } else {
                 display.text = number
             }
-                userIsInTheMiddleOfTypingANumber = true
+            userIsInTheMiddleOfTypingANumber = true
 
-                if number == "." {
-                    decimalWasAdded = true
-                }
+            if number == "." {
+                decimalWasAdded = true
             }
         }
     }
@@ -72,7 +70,6 @@ class CalculatorViewController : UIViewController {
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
         display.text = "\(result)"
-        equalsButtonWasPressed = true
     }
 
     @IBAction func equals(sender: UIButton) {
@@ -88,15 +85,21 @@ class CalculatorViewController : UIViewController {
         case "−": result = firstNumber - currentNumber
         default: break
         }
+
+        if currentNumber == 0 {
+            display.text = "error Div by 0"
+            equalsButtonWasPressed = true
+        } else {
         display.text = "\(result)"
         equalsButtonWasPressed = true
-
+        }
     }
 
 
     @IBAction func clear() {
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
+        negativeButtonHasBeenPressed = false
         result = 0
         display.text! = "\(result)"
     }
@@ -106,6 +109,7 @@ class CalculatorViewController : UIViewController {
         currentNumber = 0
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
+        negativeButtonHasBeenPressed = false
         equalsButtonWasPressed = false
         result = 0
         display.text! = "\(result)"
