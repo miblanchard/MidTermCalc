@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="F9e-7v-Pbv"/>
                         <viewControllerLayoutGuide type="bottom" id="g7q-fW-vNj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lHh-FI-kPC" customClass="UIWindow">
+                    <view key="view" contentMode="scaleToFill" id="lHh-FI-kPC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -449,24 +449,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ny-LV-5nU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="591" y="361"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="cym-5q-pUM">
-            <objects>
-                <viewController id="Opb-vU-x88" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k6a-nt-sW2"/>
-                        <viewControllerLayoutGuide type="bottom" id="CEY-ra-Lda"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5fJ-Gf-OKH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C4c-Zz-jsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="591" y="1033"/>
         </scene>
     </scenes>
 </document>
