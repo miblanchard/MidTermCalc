@@ -28,28 +28,30 @@ class CalculatorViewController : UIViewController {
             display.text = ""
             display.text = display.text! + number!
             equalsButtonWasPressed = false
-        } else if  number == "." && decimalWasAdded == true {
+        } else {
+            if  number == "." && decimalWasAdded == true {
             return
-        } else if number == "rand" {
+            } else if number == "rand" {
             display.text = "\(rand())"
-        } else if number == "+/-" && negativeButtonHasBeenPressed == false {
+            } else if number == "+/-" && negativeButtonHasBeenPressed == false {
             display.text = "-\(display.text!)"
             negativeButtonHasBeenPressed = true
-        } else if number == "+/-" && negativeButtonHasBeenPressed == true {
+            } else if number == "+/-" && negativeButtonHasBeenPressed == true {
             display.text = dropFirst(display.text!)
             negativeButtonHasBeenPressed = false
-        } else {
-            if userIsInTheMiddleOfTypingANumber == true {
+            } else {
+                if userIsInTheMiddleOfTypingANumber == true {
                 display.text = display.text! + number!
             } else {
                 display.text = number
             }
-            userIsInTheMiddleOfTypingANumber = true
+                userIsInTheMiddleOfTypingANumber = true
 
-            if number == "." {
-            decimalWasAdded = true
+                if number == "." {
+                    decimalWasAdded = true
+                }
             }
-            }
+        }
     }
 
     @IBAction func operate(sender: UIButton) {
