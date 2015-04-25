@@ -69,6 +69,7 @@ class CalculatorViewController : UIViewController {
         }
         userIsInTheMiddleOfTypingANumber = false
         decimalWasAdded = false
+        negativeButtonHasBeenPressed = false
         display.text = "\(result)"
     }
 
@@ -92,6 +93,7 @@ class CalculatorViewController : UIViewController {
         } else {
         display.text = "\(result)"
         equalsButtonWasPressed = true
+            negativeButtonHasBeenPressed = false
         }
     }
 

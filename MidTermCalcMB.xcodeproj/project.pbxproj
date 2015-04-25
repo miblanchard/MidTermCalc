@@ -13,6 +13,18 @@
 		003CC9411AE710A2001503F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003CC93F1AE710A2001503F1 /* LaunchScreen.xib */; };
 		003CC94D1AE710A2001503F1 /* MidTermCalcMBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CC94C1AE710A2001503F1 /* MidTermCalcMBTests.swift */; };
 		003CC9571AE71462001503F1 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003CC9561AE71462001503F1 /* CalculatorViewController.swift */; };
+		009CBC921AEC143600D1E750 /* Calculator-icon (1)-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC871AEC143600D1E750 /* Calculator-icon (1)-29.png */; };
+		009CBC931AEC143600D1E750 /* Calculator-icon (1)-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC881AEC143600D1E750 /* Calculator-icon (1)-29@2x.png */; };
+		009CBC941AEC143600D1E750 /* Calculator-icon (1)-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC891AEC143600D1E750 /* Calculator-icon (1)-29@3x.png */; };
+		009CBC951AEC143600D1E750 /* Calculator-icon (1)-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC8A1AEC143600D1E750 /* Calculator-icon (1)-40.png */; };
+		009CBC961AEC143600D1E750 /* Calculator-icon (1)-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC8B1AEC143600D1E750 /* Calculator-icon (1)-40@2x.png */; };
+		009CBC971AEC143600D1E750 /* Calculator-icon (1)-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC8C1AEC143600D1E750 /* Calculator-icon (1)-40@3x.png */; };
+		009CBC981AEC143600D1E750 /* Calculator-icon (1)-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC8D1AEC143600D1E750 /* Calculator-icon (1)-60@2x.png */; };
+		009CBC991AEC143600D1E750 /* Calculator-icon (1)-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC8E1AEC143600D1E750 /* Calculator-icon (1)-60@3x.png */; };
+		009CBC9A1AEC143600D1E750 /* Calculator-icon (1)-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC8F1AEC143600D1E750 /* Calculator-icon (1)-76.png */; };
+		009CBC9B1AEC143600D1E750 /* Calculator-icon (1)-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC901AEC143600D1E750 /* Calculator-icon (1)-76@2x.png */; };
+		009CBC9C1AEC143600D1E750 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 009CBC911AEC143600D1E750 /* Contents.json */; };
+		00F2E3C51AEC0D5500FBDFD8 /* Calculator-icon (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 00F2E3C41AEC0D5500FBDFD8 /* Calculator-icon (1).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		003CC94B1AE710A2001503F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003CC94C1AE710A2001503F1 /* MidTermCalcMBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidTermCalcMBTests.swift; sourceTree = "<group>"; };
 		003CC9561AE71462001503F1 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		009CBC871AEC143600D1E750 /* Calculator-icon (1)-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-29.png"; sourceTree = "<group>"; };
+		009CBC881AEC143600D1E750 /* Calculator-icon (1)-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-29@2x.png"; sourceTree = "<group>"; };
+		009CBC891AEC143600D1E750 /* Calculator-icon (1)-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-29@3x.png"; sourceTree = "<group>"; };
+		009CBC8A1AEC143600D1E750 /* Calculator-icon (1)-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-40.png"; sourceTree = "<group>"; };
+		009CBC8B1AEC143600D1E750 /* Calculator-icon (1)-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-40@2x.png"; sourceTree = "<group>"; };
+		009CBC8C1AEC143600D1E750 /* Calculator-icon (1)-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-40@3x.png"; sourceTree = "<group>"; };
+		009CBC8D1AEC143600D1E750 /* Calculator-icon (1)-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-60@2x.png"; sourceTree = "<group>"; };
+		009CBC8E1AEC143600D1E750 /* Calculator-icon (1)-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-60@3x.png"; sourceTree = "<group>"; };
+		009CBC8F1AEC143600D1E750 /* Calculator-icon (1)-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-76.png"; sourceTree = "<group>"; };
+		009CBC901AEC143600D1E750 /* Calculator-icon (1)-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1)-76@2x.png"; sourceTree = "<group>"; };
+		009CBC911AEC143600D1E750 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		00F2E3C41AEC0D5500FBDFD8 /* Calculator-icon (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calculator-icon (1).png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				003CC9331AE710A2001503F1 /* MidTermCalcMB */,
-				003CC9491AE710A2001503F1 /* MidTermCalcMBTests */,
 				003CC9321AE710A2001503F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,8 +103,21 @@
 				003CC9361AE710A2001503F1 /* AppDelegate.swift */,
 				003CC9561AE71462001503F1 /* CalculatorViewController.swift */,
 				003CC93A1AE710A2001503F1 /* Main.storyboard */,
+				00F2E3C41AEC0D5500FBDFD8 /* Calculator-icon (1).png */,
 				003CC93D1AE710A2001503F1 /* Images.xcassets */,
 				003CC93F1AE710A2001503F1 /* LaunchScreen.xib */,
+				009CBC871AEC143600D1E750 /* Calculator-icon (1)-29.png */,
+				009CBC881AEC143600D1E750 /* Calculator-icon (1)-29@2x.png */,
+				009CBC891AEC143600D1E750 /* Calculator-icon (1)-29@3x.png */,
+				009CBC8A1AEC143600D1E750 /* Calculator-icon (1)-40.png */,
+				009CBC8B1AEC143600D1E750 /* Calculator-icon (1)-40@2x.png */,
+				009CBC8C1AEC143600D1E750 /* Calculator-icon (1)-40@3x.png */,
+				009CBC8D1AEC143600D1E750 /* Calculator-icon (1)-60@2x.png */,
+				009CBC8E1AEC143600D1E750 /* Calculator-icon (1)-60@3x.png */,
+				009CBC8F1AEC143600D1E750 /* Calculator-icon (1)-76.png */,
+				009CBC901AEC143600D1E750 /* Calculator-icon (1)-76@2x.png */,
+				009CBC911AEC143600D1E750 /* Contents.json */,
+				003CC9491AE710A2001503F1 /* MidTermCalcMBTests */,
 				003CC9341AE710A2001503F1 /* Supporting Files */,
 			);
 			path = MidTermCalcMB;
@@ -102,7 +138,7 @@
 				003CC94A1AE710A2001503F1 /* Supporting Files */,
 			);
 			path = MidTermCalcMBTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		003CC94A1AE710A2001503F1 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -192,8 +228,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009CBC9B1AEC143600D1E750 /* Calculator-icon (1)-76@2x.png in Resources */,
+				009CBC9A1AEC143600D1E750 /* Calculator-icon (1)-76.png in Resources */,
+				009CBC991AEC143600D1E750 /* Calculator-icon (1)-60@3x.png in Resources */,
+				009CBC961AEC143600D1E750 /* Calculator-icon (1)-40@2x.png in Resources */,
+				009CBC951AEC143600D1E750 /* Calculator-icon (1)-40.png in Resources */,
+				009CBC9C1AEC143600D1E750 /* Contents.json in Resources */,
+				009CBC971AEC143600D1E750 /* Calculator-icon (1)-40@3x.png in Resources */,
+				009CBC931AEC143600D1E750 /* Calculator-icon (1)-29@2x.png in Resources */,
+				009CBC941AEC143600D1E750 /* Calculator-icon (1)-29@3x.png in Resources */,
+				00F2E3C51AEC0D5500FBDFD8 /* Calculator-icon (1).png in Resources */,
 				003CC93C1AE710A2001503F1 /* Main.storyboard in Resources */,
 				003CC9411AE710A2001503F1 /* LaunchScreen.xib in Resources */,
+				009CBC981AEC143600D1E750 /* Calculator-icon (1)-60@2x.png in Resources */,
+				009CBC921AEC143600D1E750 /* Calculator-icon (1)-29.png in Resources */,
 				003CC93E1AE710A2001503F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +457,7 @@
 				003CC9521AE710A2001503F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		003CC9531AE710A2001503F1 /* Build configuration list for PBXNativeTarget "MidTermCalcMBTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +466,7 @@
 				003CC9551AE710A2001503F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
